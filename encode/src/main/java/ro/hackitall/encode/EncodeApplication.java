@@ -9,5 +9,7 @@ public class EncodeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EncodeApplication.class, args);
 		String x = "TEST";
+
+		System.out.println(x);
 	}
 }
