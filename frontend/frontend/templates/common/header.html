@@ -1,0 +1,8 @@
+<div class="topnav" id="myTopnav">
+  <a href="{{ url_for('home')}}" class="{{session.home}}">Home</a>
+  <a href="{{ url_for('my_profile')}}" class="{{session.my_profile}}">My profile</a>
+  <a href="{{ url_for('external_products')}}" class="{{session.external_products}}">Other products</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBarCollapse()">&#9776;</a>
+</div>
+
+<script src="/static/js/header.js"></script>
