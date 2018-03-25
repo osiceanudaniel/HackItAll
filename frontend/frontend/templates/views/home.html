@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="header-list" align="center">
+        <h1> My food </h1>
+    </div>
+
+    <div class="list">
+        {% for item in data -%}
+        <div align="center">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top">
+                        <img src="/static/img/prod.jpeg" alt="Mountain View">
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>{{ item.name }}</h1>
+                                <p>{{ item.quantity }}</p>
+                                <p>Post date: {{ item.dateStart }}</p>
+                                <p>Exp. date: {{ item.dateExpiration }}</p>
+                                <p> {{ item.idProd }} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="btn-group" align="center">
+              <button><a href="{{url_for('share', param=item.idProd)}}">Sharing</a></button>
+              <button><a href="{{url_for('done', param=item.idProd)}}">Done</a></button>
+          </div>
+        </div>
+
+        {%- endfor %}
+    </div>
+
+<script>
+    function test(param) {
+        console.log(param)
+    }
+</script>
+{% endblock %}
