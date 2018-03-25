@@ -1,0 +1,35 @@
+<resources>
+    <!--Login Activity-->
+    <string name="app_name">HackItAllApp</string>
+    <string name="loginEmailHint">Email ...</string>
+    <string name="loginPasswordHint">Password ...</string>
+    <string name="showPasswordTextCheckBox">Show password</string>
+    <string name="loginBtn">Login</string>
+    <string name="loginRegisterLink">No account? Register here</string>
+    <string name="loginProgressTitle">Waiting to login ...</string>
+
+    <!--Register Activity-->
+    <string name="registerWelcomeText">Become a member</string>
+    <string name="registerEmailHint">Email ...</string>
+    <string name="registerPasswordHint">Password ...</string>
+    <string name="registerPasswordValidationHint">Retype password ...</string>
+    <string name="registerBtn">Sign Up</string>
+    <string name="registrationProgressTitle">Registering</string>
+    <string name="registrationProgressMessage">Waiting for registration to complete ...</string>
+    <string name="registrationFailed">Something went wrong :( Please try again!</string>
+
+    <!--Toasts-->
+    <string name="toastEmptyText">All fields required!</string>
+    <string name="loginFailed">Something went wrong. Please try again!</string>
+    <string name="toastNotEmailAddress">Please enter a valid email address!</string>
+    <string name="toastSuccReg">Registration successful! :)</string>
+    <string name="toastPassShort">Password too short. Insert at least 6 characters!</string>
+    <string name="toastPassNotMatch">Passwords do not match!</string>
+
+    <!--Main page-->
+    <string name="logoutBtnText">Logout</string>
+    <string name="refreshWaiting">Reloading ...</string>
+
+    <!--Menu-->
+    <string name="tooltipMenuExit">Logout</string>
+</resources>
